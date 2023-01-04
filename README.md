@@ -1,9 +1,14 @@
 if on wsl:
-	`cp Makefile-wsl Makefile`
+\
+`cp Makefile-wsl Makefile`
+\
 then clone the WSL kernel, build it and set $WSLKERN to the kernel folder
 
+
 if on linux:
-	`cp Makefile-linux Makefile`
+\
+`cp Makefile-linux Makefile`
+
 
 ```
 make
