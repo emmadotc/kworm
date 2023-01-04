@@ -12,9 +12,11 @@ if on linux:
 
 ```
 make
+
 sudo insmod kworm.ko
-# get major number from kernel log
-sudo mknod /dev/worm c <major number> 0
+
+sudo mknod /dev/worm c "$(cat /proc/devices | grep worm | cut -d' ' -f1)" 0
+
 cat /dev/worm
 ```
 
